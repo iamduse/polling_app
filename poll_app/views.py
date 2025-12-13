@@ -29,4 +29,7 @@ def user_logout(request):
 def vote(request):
     return  render(request, 'voting_page.html', {} )
 
+def hero(request):
+    return  render(request, 'landingpage.html', {} )
+
 

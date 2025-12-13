@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="bg-primary text-light text-center py-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Welcome to VoteNow</h1>
+    <p class="lead mb-4">Cast your vote securely, easily, and transparently.</p>
+    <a href="{% url 'home' %}" class="btn btn-light btn-lg fw-bold">Get Started</a>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Why Use VoteNow?</h2>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 p-4 h-100">
+          <div class="mb-3">
+            <i class="bi bi-shield-lock fs-1 text-primary"></i>
+          </div>
+          <h5 class="fw-bold mb-2">Secure Voting</h5>
+          <p class="text-muted">All votes are encrypted and recorded safely in our secure system.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 p-4 h-100">
+          <div class="mb-3">
+            <i class="bi bi-people fs-1 text-primary"></i>
+          </div>
+          <h5 class="fw-bold mb-2">Transparent Results</h5>
+          <p class="text-muted">View live results and know your vote counts towards the outcome.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 p-4 h-100">
+          <div class="mb-3">
+            <i class="bi bi-phone fs-1 text-primary"></i>
+          </div>
+          <h5 class="fw-bold mb-2">Easy Access</h5>
+          <p class="text-muted">Vote from anywhere with your device, anytime.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="bg-light py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Ready to Vote?</h2>
+    <p class="mb-4 text-muted">Log in now and make your voice count!</p>
+    <a href="{% url 'home' %}" class="btn btn-primary btn-lg fw-bold">Login to Vote</a>
+  </div>
+</section>
+
+{% endblock %}
