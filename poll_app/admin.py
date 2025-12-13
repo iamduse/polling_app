@@ -3,3 +3,4 @@ from .models import  Candidates
 
 # Register your models here.
 admin.site.register(Candidates)
+

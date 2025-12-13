@@ -3,19 +3,19 @@
 
         <div class="col-md-6 offset-md-3 p-3 ">
 <!--            {%if user.is_authenticated%}-->
-<!--            <h1>Welcome</h1>-->
+<!--            -->
 <!--            {% else %}-->
         <h2 class="mb-3">LOGIN TO VOTE </h2>
             <br/>
         <form method="POST", action="{% url 'home' %}">
             {% csrf_token %}
           <div class="mb-3">
-            <input type="text" class="form-control"  Placeholder="Email address"
-                    name="email" required>
+            <input type="text" class="form-control"  Placeholder="Fullname"
+                    name="fullname" required>
           </div>
           <div class="mb-3">
-            <input type="password" class="form-control"  Placeholder="Password"
-                    name="password" required>
+            <input type="password" class="form-control"  Placeholder="ID Card Number"
+                    name="card_id" required>
           </div>
           <button type="submit" class="btn btn-primary w-100">Log In</button>
 
