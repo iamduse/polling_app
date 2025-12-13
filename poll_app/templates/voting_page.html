@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container py-5">
+  <h3 class="text-center mb-4">Vote for Your Candidate</h3>
+
+  <div class="row g-4 justify-content-center">
+    <!-- Candidate 1 -->
+       <div class="col-md-4">
+       <div class="card shadow-sm border-0 text-center p-3 h-100">
+
+    <!-- Candidate Image -->
+    <div class="d-flex justify-content-center mb-3">
+      <img src="{% static 'xaashi.jpg' %}"
+           class="rounded-circle"
+           style="width: 120px; height: 120px; object-fit: cover;">
+    </div>
+
+    <!-- Candidate Info -->
+    <h5 class="fw-bold mb-1">Maxamuud Xaashi</h5>
+    <p class="text-muted mb-3">Age: 60 | Party: KAAH</p>
+
+    <!-- Progress / Votes Info -->
+    <div class="mb-3">
+      <div class="progress" style="height: 8px;">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0"
+             aria-valuemax="100"></div>
+      </div>
+      <small class="text-muted">40% votes</small>
+    </div>
+    <button class="btn btn-success w-100 fw-bold">
+      Vote
+    </button>
+
+    </div>
+  </div>
+
+
+    <!-- Candidate 2 -->
+   <div class="col-md-4">
+       <div class="card shadow-sm border-0 text-center p-3 h-100">
+
+    <!-- Candidate Image -->
+    <div class="d-flex justify-content-center mb-3">
+      <img src="{% static 'cirro.jpeg' %}"
+           class="rounded-circle"
+           style="width: 120px; height: 120px; object-fit: cover;">
+    </div>
+
+    <!-- Candidate Info -->
+    <h5 class="fw-bold mb-1">Cabdiraxman Cirro</h5>
+    <p class="text-muted mb-3">Age: 69 | Party: WADDANI</p>
+
+    <!-- Progress / Votes Info -->
+    <div class="mb-3">
+      <div class="progress" style="height: 8px;">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0"
+             aria-valuemax="100"></div>
+      </div>
+      <small class="text-muted">45% votes</small>
+    </div>
+    <button class="btn btn-success w-100 fw-bold">
+      Vote
+    </button>
+
+    </div>
+  </div>
+
+
+
+
+    <!-- Candidate 3 -->
+       <div class="col-md-4">
+       <div class="card shadow-sm border-0 text-center p-3 h-100">
+
+    <!-- Candidate Image -->
+    <div class="d-flex justify-content-center mb-3">
+      <img src="{% static 'fadumo.webp' %}"
+           class="rounded-circle"
+           style="width: 120px; height: 120px; object-fit: cover;">
+    </div>
+
+    <!-- Candidate Info -->
+    <h5 class="fw-bold mb-1">Faadumo Siciid</h5>
+    <p class="text-muted mb-3">Age: 50 | Party: HORSEED</p>
+
+    <!-- Progress / Votes Info -->
+    <div class="mb-3">
+      <div class="progress" style="height: 8px;">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+             aria-valuemax="100"></div>
+      </div>
+      <small class="text-muted">70% votes</small>
+    </div>
+    <button class="btn btn-success w-100 fw-bold">
+      Vote
+    </button>
+
+    </div>
+  </div>
+
+
+  </div>
+</div>
+
+
+
+{% endblock %}

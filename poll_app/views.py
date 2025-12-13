@@ -19,10 +19,13 @@ def home(request):
              messages.error(request, "There is error please login in again")
              return redirect("home")
      else:
-         return render(request, 'login.html', {})
+         return render(request, 'voting_page.html', {})
 
 def user_logout(request):
     logout(request)
     #messages.success(request, message="You have been logout successfully. see you again ")
     return  redirect("home")
+
+def vote_page(request):
+    pass
 
