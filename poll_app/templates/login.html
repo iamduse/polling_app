@@ -2,9 +2,6 @@
 {% block content %}
 
         <div class="col-md-6 offset-md-3 p-3 ">
-<!--            {%if user.is_authenticated%}-->
-<!--            -->
-<!--            {% else %}-->
         <h2 class="mb-3">LOGIN TO VOTE </h2>
             <br/>
         <form method="POST", action="{% url 'home' %}">
@@ -23,6 +20,6 @@
         </form>
         </div>
 
-{% endif %}
+
 
 {% endblock %}
